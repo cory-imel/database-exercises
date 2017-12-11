@@ -7,7 +7,6 @@ SELECT * FROM albums;
 
 SELECT 'Release date before 1980';
 SELECT name FROM albums WHERE release_date < 1980;
-SELECT release_date, REPLACE(release_date,'19', '18') FROM albums  WHERE release_date < 1980;
 UPDATE albums SET release_date = REPLACE(release_date,'19', '18')  WHERE release_date < 1980;
 SELECT name FROM albums WHERE release_date < 1880;
 
