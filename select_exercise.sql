@@ -1,13 +1,14 @@
-use codeup_test_db;
+USE codeup_test_db;
 
-select name from albums where artist = 'Pink Floyd';
-
-select release_date from albums where name = 'Sgt. Pepper''s Lonely Hearts Club Band';
-
-select genre from albums where name = 'Nevermind';
-
-select * from albums where release_date between 1990 and 1999;
-
-select * from albums where sales < 40000000;
-
-select * from albums where genre like '%rock%' OR genre like '%Rock%';
+SELECT 'Albums from Pink Floyd' AS 'Caption';
+SELECT name FROM albums WHERE artist = 'Pink Floyd';
+SELECT 'Release date of Sgt. Pepper''s Lonely Hearts Club Band' AS 'Caption';
+SELECT release_date FROM albums WHERE name = 'Sgt. Pepper''s Lonely Hearts Club Band';
+SELECT 'Genre of Nevermind' AS 'Caption';
+SELECT genre FROM albums WHERE name = 'Nevermind';
+SELECT 'Release date during the 90''s' AS 'Caption';
+SELECT * FROM albums WHERE release_date BETWEEN 1990 and 1999;
+SELECT 'Number of album sales less than 20000000' AS 'Caption';
+SELECT * FROM albums WHERE sales < 20000000;
+SELECT 'Rock Albums' AS 'Caption';
+SELECT * FROM albums WHERE genre LIKE '%rock%' OR genre LIKE '%Rock%';
