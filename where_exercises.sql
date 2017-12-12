@@ -2,11 +2,9 @@ USE employees;
 
 SELECT first_name,gender
 FROM employees
-WHERE first_name ='Irena'
-      AND gender = 'M'
+WHERE (first_name ='Irena'
       OR first_name ='Vidya'
-      AND gender = 'M'
-      OR first_name ='Maya'
+      OR first_name ='Maya')
       AND gender = 'M';
 
 SELECT last_name
