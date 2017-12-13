@@ -1,5 +1,3 @@
-USE employees;
-
 SELECT first_name,gender
 FROM employees
 WHERE (first_name ='Irena'
